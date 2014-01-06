@@ -1,0 +1,38 @@
+title:            SASa-Jekyll-Theme
+description:      A simple jekyll theme. Fast and Lightweight.
+url:              # Site url.
+logo:             sasa-jekyll-theme-logo.png # Replace for your own logo.
+signoff:          Sasa team # Your name.
+disqus_shortname: # disqus comment thread for post header options. ( leave blank if unwanted. )
+facebook_appid:   # appid for like button, remove from /_includes/share.html if unwanted.
+google_analytics: # set tracking, remove from /javascripts/basic.js if unwanted.
+
+links:
+  - name:         About
+    url:          /about
+  - name:         Blog
+    url:          /
+  - name:         Projects
+    url:          /projects
+  - name:         Contact
+    url:          mailto:yourname@yourhost.com
+    external:     true
+social-links:
+  - name:         GitHub
+    url:          http://github.com/yourname
+    icon:         icon-github
+    external:     true
+  - name:         Linkedin
+    url:          # Linkedin url
+    icon:         icon-linkedin
+    external:     true
+  - name:         Twitter
+    url:          # twitter url
+    icon:         icon-twitter
+    external:     true
+pygments:         false
+permalink:        pretty
+markdown:         redcarpet
+redcarpet:
+  extensions:
+    - smart

@@ -1,0 +1,43 @@
+<!-- Charset and Facebook Like link-->
+	<meta content='text/html; charset=utf-8' http-equiv='content-type' />
+	<meta content="{{ site.facebook_appid }}" property="fb:app_id" />
+	<!-- http://t.co/dKP3o1e -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+<!-- Custom Meta Content -->
+	{% if page.date %}
+		<meta content='{{ site.url }}{{ page.url }}' property='og:url' />
+		<meta content="{{ page.content | strip_html | strip_newlines | truncate: 120 }}" property='og:description' />
+		<meta content="article" property="og:type" />
+		{% else %}
+		<meta content='{{ site.url }}' property='og:url' />
+		<meta content="{{ site.description }}" property='og:description' />
+		<meta content="blog" property="og:type" />
+	{% endif %}
+<!-- /Custom Meta Content -->
+<!-- Viewport and device width -->
+	<meta content='width=device-width, initial-scale=1.0, user-scalable=no' name='viewport'>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+<!-- Windows 8 / RT -->
+	<meta name="msapplication-TileImage" content="images/apple-touch-icon-144x144-precomposed.png">
+	<meta name="msapplication-TileColor" content="#000">
+	<meta http-equiv="cleartype" content="on">
+	<link href='/images/favicon.png' rel='shortcut icon'>
+<!-- Main Stylesheet -->
+	<link href='/stylesheets/style.min.css' rel='stylesheet' type='text/css' />
+<!-- Syntax Highlight Stylesheet -->
+	<link href='/stylesheets/github.min.css' rel='stylesheet' type='text/css' />
+<!-- Main Theme Stylesheet -->
+	<link href='/stylesheets/theme.min.css' rel='stylesheet' type='text/css' />
+	<!--[if lt IE 9]>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
+	<![endif]-->
+	<script>
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=604714799556697";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>

@@ -1,0 +1,30 @@
+// Grid
+// -----
+$page-width: 940px;
+$column-count: 12;
+$column-gutter: 20px;
+$responsive-breakpoint: 767px;
+$mobile-padding: 10px;
+$tablet-padding: 20px;
+$customsize: 319px;
+
+// ! Responsive helper variables
+// -----------------------------
+$devices: mobile, mobile-tablet, tablet, tablet-desktop, desktop, pixel-ratio, device-width;
+$mobile-end: $responsive-breakpoint;
+$tablet-start: $mobile-end + 1;
+$tablet-end: $page-width + ($column-gutter * 2);
+$desktop-start: $tablet-end + 1;
+
+// ! Font helpers variables
+// -----------------------------
+$body-font-family: 'OpenSans-Light';
+$body-font-color: #444444;
+$base-font-size: 16;
+$body-font-size: 1em;
+$body-line-height: 1.5em;
+
+// ! Headings helpers variables
+// -----------------------------
+$headings-font-family: 'OpenSans-Semibold', Helvetica, Arial, sans-serif;
+$blockquote-font-family: 'OpenSans-SemiboldItalic', Helvetica, Arial, sans-serif;

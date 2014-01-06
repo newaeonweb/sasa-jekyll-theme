@@ -1,0 +1,187 @@
+/** Background - Color - Position - Sizes - Blocks*/
+/** Font-icons */
+@font-face {
+  font-family: 'fontello';
+  src: url('../font-icon/fontello.eot?93050883');
+  src: url('../font-icon/fontello.eot?93050883#iefix') format('embedded-opentype'),
+       url('../font-icon/fontello.woff?93050883') format('woff'),
+       url('../font-icon/fontello.ttf?93050883') format('truetype'),
+       url('../font-icon/fontello.svg?93050883#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?93050883#fontello') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-code:before { content: '\e800'; } /* '' */
+.icon-modular:before { content: '\e806'; } /* '' */
+.icon-github:before { content: '\e805'; } /* '' */
+.icon-twitter:before { content: '\e801'; } /* '' */
+.icon-resize:before { content: '\e802'; } /* '' */
+
+// Mouse Selection
+::-moz-selection { color: gold;  background: red; }
+::-webkit-selection { color: gold;  background: red; }
+::selection      { color: gold;  background: red; }
+
+/** Style Header*/
+header {
+  background-color: #044988;
+   @include background-image(linear-gradient(#044988, #058799));
+   max-height: 400px;
+
+   @include respond-to(mobile) {
+    max-height: 330px;    
+  }
+
+}
+.call {
+  margin:25px auto;
+  padding-top:10px;
+  padding-bottom: 10px;
+  text-align: center;
+
+
+
+  @include respond-to(customsize) {
+    margin:15px auto;
+    padding-top:0;
+  }
+}
+.call-image {
+  display: block;
+  text-align: center;
+  margin: 10px auto;
+
+  p {
+    @include font-size-ems(20, 16);
+    @include line-height(24);
+    color: #ffffff;
+    position: relative;
+    top:55px;
+
+    @include respond-to(mobile) {
+      @include font-size-ems(16);
+    }
+  }
+
+  @include respond-to(desktop) {
+    background: url(../images/desktop.png) no-repeat;
+    width: 410px;
+    height: 310px;   
+  }
+
+  @include respond-to(mobile-tablet) {
+    background: url(../images/tablet.png) no-repeat;
+    width: 240px;
+    height: 310px; 
+  }
+
+  @include respond-to(mobile) {
+    background: url(../images/mobile.png) no-repeat;
+    width: 150px;
+    height: 258px;
+  }
+}
+.slogan {
+  @include font-size(60);
+  font-family: "OpenSans-Light", Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    @include transition-property(font-size);
+    @include transition-duration(2s);       
+
+  // Adjust font size
+  @include respond-to(mobile) {
+    @include font-size(33); 
+      @include transition-property(font-size);
+      @include transition-duration(2s);       
+  }
+}
+.features {
+  margin: 60px auto;
+  padding-bottom: 1.5;
+  border-bottom: thin solid #eee;
+  
+    @include respond-to(mobile) {
+      margin: 35px auto; 
+    } 
+
+  .col4 {
+     padding: 20px 0;
+  }
+}
+.icon-code, .icon-modular, .icon-resize {
+  @include font-size(56);
+}
+.code, .modular, .resize {
+ @include font-size(30); 
+}
+
+.green {
+  color: #009779;
+}
+.blue {
+  color: #0181BD;
+}
+.orange {
+  color: #f60;
+}
+.center-blocks {
+  text-align: center;
+}
+
+.grid {
+  > .row >[class*="col"] {
+    min-height: 50px;
+    background-color: #ccc;
+    margin-bottom: 10px; 
+    &:hover {
+      color: #0181BD;
+      background-color: #eee;
+      @include transition;
+      font-size: 1.5em;
+      cursor: pointer;
+    }
+  }
+} 
+
