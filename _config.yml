@@ -1,10 +1,14 @@
 title:            SASa-Jekyll-Theme
 description:      A simple jekyll theme. Fast and Lightweight.
 <<<<<<< HEAD
+<<<<<<< HEAD
 url:              http://www.newaeonweb.com.br # Site url.
 =======
 url:              # Site url.
 >>>>>>> rebase project to gh-pages
+=======
+url:              # Site url.
+>>>>>>> 99675676cdde6e729211bd752293d44604393cc9
 logo:             sasa-jekyll-theme-logo.png # Replace for your own logo.
 signoff:          Sasa team # Your name.
 disqus_shortname: # disqus comment thread for post header options. ( leave blank if unwanted. )
