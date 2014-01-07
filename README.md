@@ -8,7 +8,36 @@ A simple jekyll theme. [See a demo:](http://newaeonweb.com.br/sasa-jekyll-theme/
 
 Work in progress...
 
-## Copyright & License
+## Screenshots & Highlights.
+
+#### Home
+![Home Page](http://www.newaeonweb.com.br/sasa-jekyll-theme/images/sample-home.png "Home Page")
+
+Clean Visual ease to customize, including social links for Twitter, Linkedin, Github.
+
+#### About
+![About Page](http://www.newaeonweb.com.br/sasa-jekyll-theme/images/sample-about.png "About Page")
+
+Including Photo, Title and Download link to your resume.
+
+#### Projects
+![Projects Page](http://www.newaeonweb.com.br/sasa-jekyll-theme/images/sample-projects.png "Projects Page")
+
+Ease to show your projects/jobs/photos, with images and video, including a title and description.
+
+#### Post
+![Post Page](http://www.newaeonweb.com.br/sasa-jekyll-theme/images/sample-post.png "Post Page")
+
+All the pages are build with markdown, including social share on Facebook and Twitter.
+
+## Contributing process
+
+1. Fork it!
+2. Create your own branch
+3. Commit your changes
+4. Submit a pull request
+
+## Copyright & License.
 
 Copyright (C) 2014 SASa - Jekyll Theme - Released under the MIT Lincense.
 
