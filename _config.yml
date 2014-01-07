@@ -1,11 +1,11 @@
 title:            SASa-Jekyll-Theme
 description:      A simple jekyll theme. Fast and Lightweight.
-url:              http://newaeonweb.github.io/sasa-jekyll-theme # Site url.
+url:              # Site url. Place your path here, or leave blank to work local.
 logo:             sasa-jekyll-theme-logo.png # Replace for your own logo.
 signoff:          Sasa team # Your name.
-disqus_shortname: # disqus comment thread for post header options. ( leave blank if unwanted. )
-facebook_appid:   # appid for like button, remove from /_includes/share.html if unwanted.
-google_analytics: # set tracking, remove from /javascripts/basic.js if unwanted.
+disqus_shortname: # disqus comments, create your account on disqus site and place your id here.
+facebook_appid:   # appid for like button, do the same above.
+google_analytics: # Place your ID here.
 
 links:
   - name:         About
