@@ -600,3 +600,41 @@ hr {
 .media-body > :last-child {
   margin-bottom: 0;
 }
+
+/* Responsive Menu*/
+#menu {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  #menu {
+    display: block;
+    font-size: 1.35em;
+    text-align: right;
+    cursor: pointer;
+    padding: 5px;
+    margin-top: -5px;
+  }
+  #menu b {
+    float: left;
+    font-size: 0.7em;
+    font-weight: normal;
+    margin-top: 4px;
+  }
+  #menu span {
+    margin-right: 10px;
+    position: relative;
+    top: 2px;
+  }
+  #nav {
+    display: none;
+    margin: 0;
+  }
+  #nav ul {
+    margin: 0 auto;
+    padding: 2%;
+  }
+  #nav li {
+    width: 100%;
+    display: block;
+  }
+}

@@ -28,4 +28,6 @@ tfoot{font-style:italic}caption{background:#eee}.small{font-size:.8em;margin-bot
 .first{margin-left:0;padding-left:0}.last{margin-right:0;padding-right:0}.top{margin-top:0;padding-top:0}.bottom{margin-bottom:0;padding-bottom:0}.pull-left{float:left}
 .pull-right{float:right}hr{border:0;border-bottom:1px dotted #CCC;margin:25px 0}::-moz-selection{color:gold;background:red}::-webkit-selection{color:gold;background:red}
 ::selection{color:gold;background:red}.media{display:block}.media-img{float:left;margin-right:1em}.media-img--rev{float:right;margin-left:1em}.media-img img,.media-img--rev img{display:block}
-.media-body{overflow:hidden}.media-body,.media-body>:last-child{margin-bottom:0}
+.media-body{overflow:hidden}.media-body,.media-body>:last-child{margin-bottom:0}#menu{display:none}@media screen and (max-width:768px){#menu{display:block;font-size:1.35em;text-align:right;cursor:pointer;padding:5px;margin-top:-5px}
+#menu b{float:left;font-size:.7em;font-weight:normal;margin-top:4px}#menu span{margin-right:10px;position:relative;top:2px}#nav{display:none;margin:0}
+#nav ul{margin:0 auto;padding:2%}#nav li{width:100%;display:block}}
