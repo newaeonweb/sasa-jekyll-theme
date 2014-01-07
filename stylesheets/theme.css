@@ -149,6 +149,8 @@ footer {
 
 .post-home {
   min-height: 230px; }
+  .post-home h1 {
+    font-size: 2.1em; }
 
 .post-list {
   list-style-type: none;
