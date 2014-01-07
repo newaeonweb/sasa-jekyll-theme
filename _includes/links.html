@@ -1,0 +1,15 @@
+<div class="container">
+	<div class="row">
+		<div class="col12">
+			<nav class="nav-top">
+				<ul class="menu-list" id="nav">
+				{% for link in site.links %}
+					<li>
+						<a target="{% if link.external %}_blank{% else %}_top{% endif %}" href="{{ link.url }}">{{ link.name }}</a>
+					</li>
+				{% endfor %}
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>

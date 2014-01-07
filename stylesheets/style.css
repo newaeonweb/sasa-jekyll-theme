@@ -1,0 +1,640 @@
+@charset "UTF-8";
+/**
+* SCSS SASa Block-Grid.
+* --------------------------------------------------
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+*/
+/** Simple Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* Clearfix Helper */
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+/* Img Helper */
+img,
+object,
+embed {
+  max-width: 100%;
+  height: auto;
+}
+
+object,
+embed {
+  height: 100%;
+}
+
+img {
+  -ms-interpolation-mode: bicubic;
+}
+
+/* IE10 on Windows Phone 8 fix for pixel viewport problem */
+@-ms-viewport {
+  width: device-width;
+}
+
+@media screen and (max-width: 400px) {
+  @-ms-viewport {
+    width: 320px;
+  }
+}
+/** Core Grid System*/
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  zoom: 1;
+  max-width: 980px;
+  width: auto;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.container:before, .container:after {
+  content: "";
+  display: table;
+}
+.container:after {
+  clear: both;
+}
+@media screen and (min-width: 768px) and (max-width: 980px) {
+  .container {
+    margin: 0;
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container {
+    margin: 0;
+    padding: 0 10px;
+  }
+}
+
+.row {
+  zoom: 1;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.row:before, .row:after {
+  content: "";
+  display: table;
+}
+.row:after {
+  clear: both;
+}
+
+@media screen and (max-width: 767px) {
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+.container [class*="col"] {
+  float: left;
+  min-height: 1px;
+  padding: 0 10px;
+}
+.container [class*="col"]:last-child {
+  float: right;
+}
+
+.container [class*="col"] {
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+@media screen and (max-width: 767px) {
+  .container [class*="col"] {
+    float: none;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.col1 {
+  width: 8.33333%;
+}
+
+.col2 {
+  width: 16.66667%;
+}
+
+.col3 {
+  width: 25%;
+}
+
+.col4 {
+  width: 33.33333%;
+}
+
+.col5 {
+  width: 41.66667%;
+}
+
+.col6 {
+  width: 50%;
+}
+
+.col7 {
+  width: 58.33333%;
+}
+
+.col8 {
+  width: 66.66667%;
+}
+
+.col9 {
+  width: 75%;
+}
+
+.col10 {
+  width: 83.33333%;
+}
+
+.col11 {
+  width: 91.66667%;
+}
+
+.col12 {
+  width: 100%;
+}
+
+/* General Body Style*/
+body {
+  font-family: "OpenSans-Light", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  color: #444444;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  font-smooth: always;
+}
+
+/** Paragraph */
+p {
+  margin: 0 0 1.5em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+p.justify {
+  text-align: justify;
+  text-rendering: auto;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  margin: 10px auto;
+  font-family: "OpenSans-Bold", Helvetica, Arial, sans-serif;
+  text-rendering: optimizelegibility;
+  line-height: 1.2em;
+  text-transform: uppercase;
+}
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 2em;
+  }
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 0.75em;
+}
+@media screen and (max-width: 767px) {
+  h2 {
+    font-size: 1em;
+  }
+}
+
+h3 {
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+@media screen and (max-width: 767px) {
+  h3 {
+    font-size: 1em;
+  }
+}
+
+h4 {
+  font-size: 1em;
+  line-height: 1.25;
+  margin-bottom: 1.25em;
+}
+@media screen and (max-width: 767px) {
+  h4 {
+    font-size: 1em;
+  }
+}
+
+h5 {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 1.5em;
+}
+
+h6 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/** Links */
+a {
+  color: #06c;
+  text-decoration: none;
+}
+a:focus {
+  color: #09f;
+}
+a:hover {
+  color: #09f;
+}
+
+/** Mix */
+strong, dfn {
+  font-weight: bold;
+}
+
+em, dfn {
+  font-style: italic;
+}
+
+sup, sub {
+  line-height: 0;
+}
+
+abbr, acronym {
+  border-bottom: 1px dotted #666;
+}
+
+address {
+  margin: 0 0 1.5em;
+  font-style: italic;
+}
+
+del {
+  color: #666;
+}
+
+pre {
+  margin: 1.5em 0;
+  white-space: pre;
+}
+
+pre, code, tt {
+  font: 1em 'andale mono', 'lucida console', monospace;
+  line-height: 1.5;
+}
+
+/** List */
+dt {
+  font-weight: bold;
+}
+
+dd {
+  padding-left: 20px;
+}
+
+blockquote {
+  font-family: "Crimson Text", Helvetica, Arial, sans-serif;
+  padding-left: 20px;
+  margin: 1.5em;
+  font-style: italic;
+  border-left: 1px solid;
+}
+
+blockquote + figcaption {
+  display: block;
+  font-size: inherit;
+  text-align: right;
+}
+
+blockquote + figcaption:before {
+  content: "-";
+  /* "-" is your citation flourish */
+}
+
+figcaption {
+  background-color: #f2f2f2;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 100%;
+  font-size: 14px;
+  font-size: 0.875rem;
+  color: #373737;
+}
+figcaption.center {
+  text-align: center;
+}
+
+/* typography.css */
+html {
+  font-size: 100.01%;
+}
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 99%;
+  }
+}
+
+li ul, li ol {
+  margin: 0;
+}
+
+ul, ol {
+  margin: 0 1.5em 1.5em 0;
+  padding-left: 1.5em;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+dl {
+  margin: 0 0 1.5em 0;
+}
+
+dl dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 1.5em;
+}
+
+table {
+  margin-bottom: 1.4em;
+  width: 100%;
+}
+
+th {
+  font-weight: bold;
+}
+
+thead th {
+  background: #c3d9ff;
+}
+
+th, td, caption {
+  padding: 4px 10px 4px 5px;
+}
+
+tbody tr:nth-child(even) td, tbody tr.even td {
+  background: #e5ecf9;
+}
+
+tfoot {
+  font-style: italic;
+}
+
+caption {
+  background: #eee;
+}
+
+.small {
+  font-size: .8em;
+  margin-bottom: 1.875em;
+  line-height: 1.875em;
+}
+
+.large {
+  font-size: 1.2em;
+  line-height: 2.5em;
+  margin-bottom: 1.25em;
+}
+
+.hide {
+  display: none;
+}
+
+.quiet {
+  color: #666;
+}
+
+.loud {
+  color: #000;
+}
+
+.highlight {
+  background: #ff0;
+}
+
+.added {
+  background: #060;
+  color: #fff;
+}
+
+.removed {
+  background: #900;
+  color: #fff;
+}
+
+.first {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.last {
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.top {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.bottom {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.pull-left {
+  float: left; }
+
+.pull-right {
+  float: right; }
+
+hr {
+  border: 0;
+  border-bottom: 1px dotted #CCC;
+  margin: 25px 0;
+}
+
+::-moz-selection {
+  color: gold;
+  background: red;
+}
+
+::-webkit-selection {
+  color: gold;
+  background: red;
+}
+
+::selection {
+  color: gold;
+  background: red;
+}
+
+/** Core Media Elements */
+/*
+  Media Object
+
+  * Place any image- and text-like content side-by-side, as per:
+  * stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code
+  * E.g.:
+  *
+  <div class="media">
+    <img src="http://placekitten.com/100/100" alt="" class="media-img>"
+    <p class="media-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+  ========================================================================== */
+.media {
+  display: block;
+}
+
+.media-img {
+  float: left;
+  margin-right: 1em;
+}
+
+/**
+ * Reversed image location (right instead of left).
+ */
+.media-img--rev {
+  float: right;
+  margin-left: 1em;
+}
+
+.media-img img,
+.media-img--rev img {
+  display: block;
+}
+
+.media-body {
+  overflow: hidden;
+}
+
+.media-body,
+.media-body > :last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive Menu*/
+#menu {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  #menu {
+    display: block;
+    font-size: 1.35em;
+    text-align: right;
+    cursor: pointer;
+    padding: 5px;
+    margin-top: -5px;
+  }
+  #menu b {
+    float: left;
+    font-size: 0.7em;
+    font-weight: normal;
+    margin-top: 4px;
+  }
+  #menu span {
+    margin-right: 10px;
+    position: relative;
+    top: 2px;
+  }
+  #nav {
+    display: none;
+    margin: 0;
+  }
+  #nav ul {
+    margin: 0 auto;
+    padding: 2%;
+  }
+  #nav li {
+    width: 100%;
+    display: block;
+  }
+}

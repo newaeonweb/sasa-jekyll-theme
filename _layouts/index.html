@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content='{{ site.title }}' property='og:title' />
+    <title>{{ site.title }}</title>
+    {% include head.html %}
+  </head>
+  <body>
+    {% include links.html %}
+    {% include header.html %}
+    <div class='container'>
+      <div class="row">
+        <!--Content from index.html (root)-->
+        {{ content }}
+      </div>
+    </div>
+    {% include footer.html %}
+  </body>
+</html>

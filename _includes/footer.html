@@ -1,0 +1,38 @@
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col6">
+				<div class="copyright">
+					<!--Be nice and keep the copyright here! thanx.-->
+					&copy; 2014 - Built with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="http://www.newaeonweb.com.br/sasa">SASa Block-Grid!</a>
+				</div>
+			</div>
+			<div class="col6">
+				<nav class="social-links">
+					<ul class="menu-list">
+						{% for link in site.social-links %}
+						<li>
+							<a target="{% if link.external %}_blank{% else %}_top{% endif %}" class="{{ link.icon }}" href="{{ link.url }}">{{ link.name }}</a>
+						</li>
+						{% endfor %}
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+</footer>
+<!--Include JavaScript files at bottom-->
+<script src='http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.3.0/respond.js'></script>
+<script src='/javascripts/jquery.min.js'></script>
+<script src='/javascripts/prettydate.min.js'></script>
+<script src='/javascripts/highlight.pack.js'></script>
+<script src='/javascripts/custom.min.js'></script>
+<!--Init Sybtax Highlighter-->
+<script>
+$(document).ready(function() {
+  $('pre code').each(function(i, e) {hljs.highlightBlock(e)});
+});
+//hljs.initHighlightingOnLoad();
+</script>
+<!--Include Analytics, place your ID code on _config.yml file-->
+{% include ga.html %}

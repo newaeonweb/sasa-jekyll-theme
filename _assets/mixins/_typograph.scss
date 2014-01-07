@@ -1,0 +1,43 @@
+// General Mixins for Font-face, Headings, Paragraph.
+
+// Font-face 
+@mixin font-face($font-family, $font-url, $font-name, $font-style, $font-weight) {
+	@font-face {
+		font: {
+			family: $font-family;
+			style: $font-style;
+			weight: $font-weight;
+		}
+		src: 	url($font-url + '/' + $font-name + '.eot') format('eot'),
+					url($font-url + '/' + $font-name + '.eot?#iefix')	format('embedded-opentype'), 
+					url($font-url + '/' + $font-name + '.woff') format('woff'), 
+					url($font-url + '/' + $font-name + '.ttf')  format('truetype'),
+					url($font-url + '/' + $font-name + '.svg#' + $font-name) format('svg');
+		}
+}
+
+// REM
+// @include rem(margin, $base-font-size);
+@mixin rem($property, $sizeValue: $base-font-size){
+	$remValue: ($sizeValue / $base-font-size);
+	#{$property}: $sizeValue + px;
+	#{$property}: $remValue + rem;
+}
+
+// REM font size
+// @include font-size(16);
+@mixin font-size($sizeValue: $base-font-size){
+	@include rem(font-size, $sizeValue);
+}
+
+// REM line height
+// @include line-height(16);
+@mixin line-height($sizeValue: $base-line-height){
+	@include rem(line-height, $sizeValue);
+}
+
+// EM font size
+// @include font-size-ems(20, 16);
+@mixin font-size-ems($target-px-size, $context-px-size:$base-font-size) {
+	font-size: ($target-px-size / $context-px-size) * 1em;
+}

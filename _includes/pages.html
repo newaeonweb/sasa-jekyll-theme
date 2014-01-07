@@ -1,0 +1,16 @@
+<span class="paging">
+  {% if page.previous %}
+    <div class="left">
+      <a class="to-top" href="{{ page.previous.url }}" title="go back">
+        ‹
+      </a>
+    </div>
+  {% endif %}
+  {% if page.next %}
+    <div class="right">
+      <a class="to-top" href="{{page.next.url}}" title="go ahead">
+        ›
+      </a>
+    </div>
+  {% endif %}
+</span>

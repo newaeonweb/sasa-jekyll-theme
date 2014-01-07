@@ -1,0 +1,16 @@
+---
+layout: index
+---
+<div class="col12">
+	<section class="post-home">
+		<h1>Latest From the Blog</h1>
+		<ul class="post-list">
+			{% for post in site.posts %}
+			<li>
+				<small class="datetime muted" data-time="{{ post.date }}">{{ post.date | date_to_string }} </small>
+				<a href="{{ post.url }}">{{ post.title }}</a>
+			</li>
+			{% endfor %}
+		</ul>
+	</section>
+</div>

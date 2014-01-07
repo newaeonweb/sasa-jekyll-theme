@@ -1,0 +1,82 @@
+// General Mixins for Grid, Clearfix and Image Helpers
+
+/* Clearfix Helper */
+@mixin clearfix {
+		&:before,
+		&:after {
+				content:"";
+				display:table;
+		}
+		&:after {
+				clear:both;
+		}
+		zoom:1;
+}
+
+.clearfix {
+	@include clearfix();
+}
+
+// Helpers for Images
+/* Img Helper */
+ img,
+	object,
+	embed { 
+		max-width: 100%; 
+		height: auto;
+	}
+
+	object,
+	embed { 
+		height: 100%;
+	}
+
+	img { 
+		-ms-interpolation-mode: bicubic;
+	}
+
+/* IE10 on Windows Phone 8 fix for pixel viewport problem */
+@-ms-viewport{
+	width: device-width;
+}
+
+@media screen and (max-width: 400px) {
+	@-ms-viewport{
+		width: 320px;
+	}
+}
+
+// ! Respond to device mixins
+// --------------------------
+@mixin respond-to($device) {
+	
+	@if $device == "desktop" {
+		@media screen and (min-width: $desktop-start) { @content }
+	}
+	
+	@if $device == "tablet-desktop" {
+		@media screen and (min-width: $tablet-start) { @content }
+	}
+	
+	@if $device == "tablet" {
+		@media screen and (min-width: $tablet-start) and (max-width: $tablet-end) { @content }
+	}
+	
+	@if $device == "mobile-tablet" {
+		@media screen and (max-width: $tablet-end) { @content }
+	}
+	
+	@if $device == "mobile" {
+		@media screen and (max-width: $mobile-end) { @content }
+	}
+
+	@if $device == "pixel-ratio" {
+		@media only screen and (-webkit-min-device-pixel-ratio : 2) { @content }
+	}
+	@if $device == "device-width" {
+		@media only screen and (max-device-width: 480px) { @content }
+	}
+	@if $device == "customsize" {
+		@media screen and (max-width: $customsize) { @content }
+	}
+}
