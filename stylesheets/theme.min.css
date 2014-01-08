@@ -8,7 +8,8 @@ blockquote p{margin:0;padding-top:0;padding-bottom:0}header img{opacity:.5}heade
 .nav-top{margin:10px auto;text-align:center;text-transform:uppercase}.nav-top a{margin:10px auto;text-align:center;padding:5px 20px;color:#666;line-height:2em}
 .nav-top a:hover{color:#fff;padding:5px 20px;background-color:#000}.menu-list{display:inline;list-style-type:none}.menu-list li{display:inline;margin-right:10px}
 .blog-title{margin:20px auto;text-align:center;border-bottom:thin dotted #ccc;padding-bottom:10px}.blog-title p{font-size:1.3em;color:#808080}.blog-title h1{font-family:"OpenSans-Light",Helvetica,Arial,sans-serif;font-weight:200;margin-bottom:.1em}
-.post-home{min-height:230px}.post-home h1{font-size:2.1em}.post-list{list-style-type:none;margin:0;padding:0}.post-list li{margin-bottom:10px}.post{margin:20px auto}
-pre{overflow-x:auto;width:100%;line-height:1.2em;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}code{font-size:13px;padding:2px 5px;background-color:#e9e9e9;border-radius:2px;line-height:1.3em;display:inline-block;vertical-align:baseline;zoom:1;*display:inline;*vertical-align:auto}
+.post-home{min-height:230px}.post-home h1{font-size:2em;color:#CCC}.post-list{list-style-type:none;margin:0;padding:0}.post-list li{margin-bottom:10px}
+.post-list .datetime{float:right}.post{margin:20px auto}pre{overflow-x:auto;width:100%;line-height:1.2em;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+code{font-size:13px;padding:2px 5px;background-color:#e9e9e9;border-radius:2px;line-height:1.3em;display:inline-block;vertical-align:baseline;zoom:1;*display:inline;*vertical-align:auto}
 .paging{float:right}.paging a{color:#000;opacity:.25}.paging a:hover{opacity:.7;background:0}.paging .left,.paging .right{font-size:5em}.paging .left{margin-left:-30px;float:left}
 .paging .right{margin-left:30px}.social-links{text-align:right}

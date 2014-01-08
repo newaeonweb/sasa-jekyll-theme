@@ -11,22 +11,22 @@ Work in progress...
 ## Screenshots & Highlights.
 
 #### Home
-![Home Page](http://www.newaeonweb.com.br/sasa-jekyll-theme/images/sample-home.png "Home Page")
+![Home Page](http://www.newaeonweb.com.br/images/home.png "Home Page")
 
 Clean Visual ease to customize, including social links for Twitter, Linkedin, Github.
 
 #### About
-![About Page](http://www.newaeonweb.com.br/sasa-jekyll-theme/images/sample-about.png "About Page")
+![About Page](http://www.newaeonweb.com.br/images/about.png "About Page")
 
 Including Photo, Title and Download link to your resume.
 
 #### Projects
-![Projects Page](http://www.newaeonweb.com.br/sasa-jekyll-theme/images/sample-projects.png "Projects Page")
+![Projects Page](http://www.newaeonweb.com.br/images/projects.png "Projects Page")
 
 Ease to show your projects/jobs/photos, with images and video, including a title and description.
 
 #### Post
-![Post Page](http://www.newaeonweb.com.br/sasa-jekyll-theme/images/sample-post.png "Post Page")
+![Post Page](http://www.newaeonweb.com.br/images/post.png "Post Page")
 
 All the pages are build with markdown, including social share on Facebook and Twitter.
 
