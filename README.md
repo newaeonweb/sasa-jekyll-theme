@@ -3,39 +3,30 @@ SASa Jekyll Theme
 
 > Build with SASa Block-Grid!
 
-A simple jekyll theme. [See a demo:](http://newaeonweb.com.br/sasa-jekyll-theme/)
-<br />
-
-Work in progress...
+A simple and **responsive** jekyll theme. [See a demo:](http://www.newaeonweb.com.br/sasa-jekyll-theme/).
+Inspired by [Scribble](https://github.com/muan/scribble) theme.
 
 ## Screenshots & Highlights.
 
 #### Home
 ![Home Page](http://www.newaeonweb.com.br/images/home.png "Home Page")
 
-Clean Visual ease to customize, including social links for Twitter, Linkedin, Github.
+**Clean Visual ease to customize, including social links for Twitter, Linkedin, Github.**
 
 #### About
 ![About Page](http://www.newaeonweb.com.br/images/about.png "About Page")
 
-Including Photo, Title and Download link to your resume.
+**Including Photo, Title and Download link to your resume.**
 
 #### Projects
 ![Projects Page](http://www.newaeonweb.com.br/images/projects.png "Projects Page")
 
-Ease to show your projects/jobs/photos, with images and video, including a title and description.
+**Ease to show your projects/jobs/photos, with images and video, including a title and description.**
 
 #### Post
 ![Post Page](http://www.newaeonweb.com.br/images/post.png "Post Page")
 
-All the pages are build with markdown, including social share on Facebook and Twitter.
-
-## Contributing process
-
-1. Fork it!
-2. Create your own branch
-3. Commit your changes
-4. Submit a pull request
+**All the pages are build with markdown, including social share on Facebook and Twitter.**
 
 ## Copyright & License.
 
