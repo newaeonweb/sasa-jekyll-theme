@@ -17,6 +17,7 @@ links:
   - name:         Contact
     url:          mailto:yourname@yourhost.com
     external:     true
+
 social-links:
   - name:         GitHub
     url:          http://github.com/yourname
